@@ -1,0 +1,28 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "mvc_tool",
+    "description": "i18n:mvc_tool.description",
+    "main": "./dist/main.js",
+    "devDependencies": {
+        "@types/node": "^16.0.1",
+        "typescript": "^4.3.4"
+    },
+    "author": "mason",
+    "editor": ">=3.5.0",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w"
+    },
+    "contributions": {
+        "assets": {
+            "menu": {
+                "methods": "./dist/assets-menu.js",
+                "createMenu": "onCreateMenu",
+                "assetMenu": "onAssetMenu",
+                "dbMenu": "onDBMenu",
+                "panelMenu": "onPanelMenu"
+            }
+        }
+    }
+}

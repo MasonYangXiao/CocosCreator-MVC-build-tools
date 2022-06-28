@@ -1,0 +1,11 @@
+import { _decorator, Component, Node } from 'cc';
+import { UIController } from '../../framework/manager/UIManager';
+const { ccclass, property } = _decorator;
+
+@ccclass('DemoController')
+export class DemoController extends UIController {
+    
+    onLoad(){
+        super.onLoad();
+    }
+}
